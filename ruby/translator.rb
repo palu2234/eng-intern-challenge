@@ -1,6 +1,10 @@
 # This is a simple Ruby program that translates English text to Braille and vice versa.
+# Author: Michael Palummieri
+# Date: 2024-09-02
+# For Shopify internship application
 
-# Detect input language
+
+# Method to detect input language
 def detect_language(input)
     if input =~ /^[\.o\s]+$/i
         return :braille
