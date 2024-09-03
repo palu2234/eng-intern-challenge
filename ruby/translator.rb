@@ -59,8 +59,9 @@ def braille_to_eng(input, braille_map, num_braille_map, dec_braille_map)
                 output << reversed_map[braille_char]
             end
         end
-        output.join
     end
+    output.join
+end
 
 def main
     # Map of English characters to Braille characters + special cases
@@ -143,5 +144,8 @@ def main
     when :braille
         output = braille_to_eng(input, braille_map, num_braille_map, dec_braille_map)
     end
+
+    # Display output
+    puts output
 
 end
